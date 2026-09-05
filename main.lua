@@ -597,7 +597,7 @@ scr:button({
 
         Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
 
-        runScript('Rocket')
+        runScript('Rocket Launcher')
     end,
 })
 
@@ -650,7 +650,7 @@ scr:button({
 
         Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
 
-        runScript('AnimationMan')
+        runScript('Animation Man')
     end,
 })
 
