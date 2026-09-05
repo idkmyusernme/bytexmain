@@ -417,7 +417,7 @@ scr:button({
 })
 
 scr:button({
-    Name = "Trap Rifle (broken too)",
+    Name = "Trap Rifle (broken)",
     Callback = function()
         local BytexConvert_HatID = 97794328990149
         local BytexConvert_HatCFrame = CFrame.new(0, -1.5, -0.6) * CFrame.Angles(math.rad(-50), math.rad(90) , 0)
@@ -624,7 +624,7 @@ scr:button({
 
         Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
 
-        runScript('LuaHammer')
+        runScript('Lua Hammer')
     end,
 })
 
@@ -663,7 +663,7 @@ scr:button({
 
         Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
 
-        runScript('DubStep')
+        runScript('DubStep Gun')
     end,
 })
 --[[
