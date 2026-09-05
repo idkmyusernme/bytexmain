@@ -582,7 +582,7 @@ scr:button({
 
         Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
 
-        runScript('knife')
+        runScript('Grab Knife')
     end,
 })
 
