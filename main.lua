@@ -22,7 +22,7 @@ local Bytex = {
 
 ]]--
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coilis/ByteWare/refs/heads/main/lib.lua"))()
+local Library = loadstring(game:HttpGet("https://github.com/idkmyusernme/bytexmain/blob/main/lib.lua"))()
 
 local bytexgui = Library:create{
     Theme = Library.Themes.Dark,
