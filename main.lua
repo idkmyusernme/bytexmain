@@ -9,9 +9,9 @@ local Bytex = {
     R15FlingPart = "LeftFoot",
     R6FakeLimb = 63690008,
     GiveHatPrefix = "-gh",
-    Permadeath = false,
+    Permadeath = true,
     UseHats = true,
-    ExtraHats = false,
+    ExtraHats = true,
     FlingEnabled = true,
     FlingPartRestingOffset = -10
 }
@@ -22,7 +22,7 @@ local Bytex = {
 
 ]]--
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bytexlol/bytexreanimation/refs/heads/main/lib.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coilis/ByteWare/refs/heads/main/lib.lua"))()
 
 local bytexgui = Library:create{
     Theme = Library.Themes.Dark,
@@ -57,9 +57,9 @@ function Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatL
             ["TeleportBackWhenVoided"] = false,
             
             -- [[ Reanimation Settings ]] --
-            ["AlignReanimate"] = false,
+            ["AlignReanimate"] = true,
             ["FullForceAlign"] = false,
-            ["FasterHeartbeat"] = false,
+            ["FasterHeartbeat"] = true,
             ["DynamicalVelocity"] = false,
             ["DisableTweaks"] = true,
             
@@ -67,11 +67,11 @@ function Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatL
             ["OptimizeGame"] = false,
 
             -- [[ Miscellacious ]] --
-            ["LoadLibrary"] = false,
+            ["LoadLibrary"] = true,
             ["DetailedCredits"] = false,
             
             -- [[ Flinging Methods ]] --
-            ["TorsoFling"] = false,
+            ["TorsoFling"] = true,
             ["R6FlingPart"] = Bytex.R6FlingPart,
             ["R15FlingPart"] = Bytex.R15FlingPart,
 	        ["R6FakeLimb"] = Bytex.R6FakeLimb,
@@ -109,7 +109,7 @@ function Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatL
             end
         end
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/bytexlol/bytexreanimation/refs/heads/main/reanimate.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Coilis/ByteWare/refs/heads/main/ReanimaTion.lua"))()
         
         wait(0.5)
         if Bytex.UseHats then
@@ -184,9 +184,9 @@ local Global = (getgenv and getgenv()) or shared
             ["TeleportBackWhenVoided"] = false,
             
             -- [[ Reanimation Settings ]] --
-            ["AlignReanimate"] = false,
+            ["AlignReanimate"] = true,
             ["FullForceAlign"] = false,
-            ["FasterHeartbeat"] = false,
+            ["FasterHeartbeat"] = true,
             ["DynamicalVelocity"] = false,
             ["DisableTweaks"] = true,
             
@@ -208,7 +208,7 @@ local Global = (getgenv and getgenv()) or shared
             ["MeleeOffsetZ"] = MeleeOffsetZ or -2.5,
             ["MeleeOffsetX"] = MeleeOffsetX or 0,
             ["BulletConfig"] = {
-                ["RunAfterReanimate"] = true,
+                ["RunAfterReanimate"] = false,
                 ["LockBulletOnTorso"] = true
             }
         }
@@ -232,7 +232,7 @@ local Global = (getgenv and getgenv()) or shared
             end
         end
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/bytexlol/bytexreanimation/refs/heads/main/reanimate.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Coilis/ByteWare/refs/heads/main/ReanimaTion.lua"))()
         
         wait(0.5)
         bytexgui:Notification{
@@ -243,7 +243,7 @@ local Global = (getgenv and getgenv()) or shared
 end
 
 function runScript(scr)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/bytexlol/bytexreanimation/refs/heads/main/scripts/"..scr..".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Coilis/ByteWare/refs/heads/main/scripts/"..scr..".lua"))()
 end
 
 function runScript2(scr, id, cframe, id2, cframe2, id3, cframe3)
@@ -260,7 +260,7 @@ function runScript2(scr, id, cframe, id2, cframe2, id3, cframe3)
         
     }
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/bytexlol/bytexreanimation/refs/heads/main/scripts/"..scr..".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Coilis/ByteWare/refs/heads/main/scripts/"..scr..".lua"))()
 end
 
 --[[
@@ -393,7 +393,7 @@ reanim:textbox({
 scr:button({
     Name = "Sniper",
     Callback = function()
-        local BytexConvert_HatID = 80504366986388
+        local BytexConvert_HatID = 133000590731897
         local BytexConvert_HatCFrame = CFrame.new(0, -1.5, -0.6) * CFrame.Angles(math.rad(-90), math.rad(90) , 0)
         local BytexConvert_HatLimbWeld = "Right Arm"
 
@@ -405,8 +405,8 @@ scr:button({
 scr:button({
     Name = "Elio Blasio",
     Callback = function()
-        local BytexConvert_HatID = 4933294084
-        local BytexConvert_HatCFrame = CFrame.new(0, -1.2, -0.6) * CFrame.Angles(math.rad(-40), math.rad(-90) , 0)
+        local BytexConvert_HatID = 100171532179089
+        local BytexConvert_HatCFrame = CFrame.new(0, -1.2, -0.6) * CFrame.Angles(math.rad(-90), math.rad(-360) , 0)
         local BytexConvert_HatLimbWeld = "Right Arm"
 
         local Bytex_ExtraHats = "181354245, 14463095"
@@ -417,9 +417,9 @@ scr:button({
 })
 
 scr:button({
-    Name = "Trap Rifle",
+    Name = "Trap Rifle (broken too)",
     Callback = function()
-        local BytexConvert_HatID = 13820315965
+        local BytexConvert_HatID = 97794328990149
         local BytexConvert_HatCFrame = CFrame.new(0, -1.5, -0.6) * CFrame.Angles(math.rad(-50), math.rad(90) , 0)
         local BytexConvert_HatLimbWeld = "Right Arm"
 
@@ -445,7 +445,7 @@ scr:button({
 scr:button({
     Name = "Shotgun",
     Callback = function()
-        local BytexConvert_HatID = 17651760939
+        local BytexConvert_HatID = 95395812026004
         local BytexConvert_HatCFrame = CFrame.new(0, -1.9, -0.4) * CFrame.Angles(math.rad(-33), math.rad(-90) , 0)
         local BytexConvert_HatLimbWeld = "Right Arm"
 
@@ -556,6 +556,116 @@ scr:button({
     end,
 })
 
+scr:button({
+    Name = "Gale Fighter(turn on extra hats)",
+    Callback = function()
+        local BytexConvert_HatID = 121629329212819
+        local BytexConvert_HatCFrame = CFrame.new(0, -0.5, 1.7) * CFrame.Angles(math.rad(-40), math.rad(-90), math.rad(0))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        local Bytex_ExtraHats = "78327599218076"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true, -3.15, nil, Bytex_ExtraHats)
+
+        runScript('goner')
+    end,
+})
+
+scr:button({
+
+    Name = "Knife",
+
+    Callback = function()
+        local BytexConvert_HatID = 76987834134194
+        local BytexConvert_HatCFrame = CFrame.new(0, -1, -0.5) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
+
+        runScript('knife')
+    end,
+})
+
+scr:button({
+
+    Name = "Rocket Launcher",
+
+    Callback = function()
+        local BytexConvert_HatID = 86195639625389
+        local BytexConvert_HatCFrame = CFrame.new(0, -1.5, -0.7) * CFrame.Angles(math.rad(90), math.rad(90), math.rad(0))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
+
+        runScript('Rocket')
+    end,
+})
+
+scr:button({
+    Name = "john doe",
+    Callback = function()
+        local BytexConvert_HatID = 122293866267553
+        local BytexConvert_HatCFrame = CFrame.new(0.3, -0.5, -0) * CFrame.Angles(math.rad(0), math.rad(0) , 0)
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        local Bytex_ExtraHats = "88189987572253, 102093976550242, 18196403126"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, false, nil, nil, Bytex_ExtraHats)
+        runScript('Johny')
+    end,
+})
+
+scr:button({
+    Name = "Lua Hammer",
+    Callback = function()
+        local BytexConvert_HatID = 93248624842643
+        local BytexConvert_HatCFrame = CFrame.new(0, -0.6, -1.3) * CFrame.Angles(math.rad(-90), math.rad(-90), math.rad(0))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
+
+        runScript('LuaHammer')
+    end,
+})
+
+scr:button({
+    Name = "HyperLaser",
+    Callback = function()
+        local BytexConvert_HatID = 132075823905007
+        local BytexConvert_HatCFrame = CFrame.new(0, -1.2, -0.5) * CFrame.Angles(math.rad(0), math.rad(90), math.rad(-90))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
+
+        runScript('HyperLaser')
+    end,
+})
+
+scr:button({
+    Name = "AnimationMan",
+    Callback = function()
+        local BytexConvert_HatID = 376524487
+        local BytexConvert_HatCFrame = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
+
+        runScript('AnimationMan')
+    end,
+})
+
+scr:button({
+    Name = "DubStep",
+    Callback = function()
+        local BytexConvert_HatID = 137063455124987
+        local BytexConvert_HatCFrame = CFrame.new(0.5, 0.3, -1) * CFrame.Angles(math.rad(-120), math.rad(90), math.rad(0))
+        local BytexConvert_HatLimbWeld = "Right Arm"
+
+        Reanimate(BytexConvert_HatID, BytexConvert_HatCFrame, BytexConvert_HatLimbWeld, true)
+
+        runScript('DubStep')
+    end,
+})
 --[[
 
     //  EXTRA  \\
@@ -564,24 +674,24 @@ scr:button({
 
 bytexgui:Notification{
     Title = "Welcome to Bytex!",
-    Text = "Scripts and customization converted/made by 2faint. Reanimation made by Gelatek",
+    Text = "Made By Coilis,GGcocacola,2fiant",
     Duration = 5,
 }
 
-bytexgui:set_status("version 1.09")
+bytexgui:set_status("version 1.20")
 
 wait(1)
 
-if game.GameId ~= 6016588693 then
+if game.GameId ~= 123974602339071 then
     bytexgui:Prompt{
         Followup = false,
-        Title = "Warning",
-        Text = "This script may not work in this game. Click OK if you want to be teleported into Just a baseplate",
+        Title = "reminder",
+        Text = "say -net everytime you execute bytex scripts",
         Buttons = {
             ok = function()
-                game:GetService("TeleportService"):Teleport(17574618959, game.Players.LocalPlayer)
+                
             end,
-            cancel = function()
+            no. = function()
             end
         }
     }
